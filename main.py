@@ -1,4 +1,2 @@
-import math
-
-def find_next_square(sq):
-        return (math.sqrt(sq) + 1) ** 2 if sq % math.sqrt(sq) == 0 else -1
+def palindromes(word):
+        return True if word == word[::-1] else False
