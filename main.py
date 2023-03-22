@@ -1,2 +1,4 @@
 def palindromes(word):
-        return True if word == word[::-1] else False
+    reversed_word = "".join(e for e in word if e.isalnum()).replace(" ", "").lower()[::-1]
+    main_word = "".join(e for e in word if e.isalnum()).replace(" ", "").lower()
+    return main_word == reversed_word
